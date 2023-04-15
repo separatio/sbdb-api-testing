@@ -1,57 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.10 on linux)" generated="20230415 16:54:01.334" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.8.10 on linux)" generated="20230415 17:58:10.650" rpa="false" schemaversion="3">
 <suite id="s1" name="Robot Interactive Console" source="/home/alex/.vscode/extensions/robocorp.robotframework-lsp-1.10.0/src/robotframework_ls/vendored/robotframework_interactive/robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
-<kw name="Create Session">
-<arg>JPL API</arg>
-<arg>https://ssd-api.jpl.nasa.gov</arg>
-<msg timestamp="20230415 16:54:02.112" level="FAIL">No keyword with name 'Create Session' found.</msg>
-<status status="FAIL" starttime="20230415 16:54:02.112" endtime="20230415 16:54:02.112"/>
+<kw name="Log To Console Hello World">
+<msg timestamp="20230415 17:58:52.327" level="FAIL">No keyword with name 'Log To Console Hello World' found. Did you try using keyword 'BuiltIn.Log' or 'BuiltIn.Log To Console' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20230415 17:58:52.327" endtime="20230415 17:58:52.327"/>
 </kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${query_params}</var>
-<arg>dist-max=10LD</arg>
-<arg>date-min=2018-01-01</arg>
-<arg>sort=dist</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" starttime="20230415 16:54:02.113" endtime="20230415 16:54:02.113"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Hello World</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230415 17:58:56.212" endtime="20230415 17:58:56.213"/>
 </kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${headers}</var>
-<arg>accept=application/json</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" starttime="20230415 16:54:02.113" endtime="20230415 16:54:02.113"/>
+<kw name="Log To Console azi este frumos afara">
+<msg timestamp="20230415 18:27:42.931" level="FAIL">No keyword with name 'Log To Console azi este frumos afara' found. Did you try using keyword 'BuiltIn.Log' or 'BuiltIn.Log To Console' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20230415 18:27:42.931" endtime="20230415 18:27:42.931"/>
 </kw>
-<kw name="Get Request">
-<var>${response}</var>
-<arg>JPL API</arg>
-<arg>/cad.api</arg>
-<arg>params=${query_params}</arg>
-<arg>headers=${headers}</arg>
-<status status="NOT RUN" starttime="20230415 16:54:02.114" endtime="20230415 16:54:02.114"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>azi este frumos afara</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230415 18:27:47.596" endtime="20230415 18:27:47.597"/>
 </kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${response.status_code}</arg>
-<arg>200</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" starttime="20230415 16:54:02.114" endtime="20230415 16:54:02.114"/>
+<status status="PASS" starttime="20230415 17:58:10.667" endtime="20230415 18:37:30.525"/>
 </kw>
-<kw name="Should Be True" library="BuiltIn">
-<arg>${response.json()['count']}&gt;0</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="NOT RUN" starttime="20230415 16:54:02.114" endtime="20230415 16:54:02.114"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>${response.json()}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20230415 16:54:02.115" endtime="20230415 16:54:02.115"/>
-</kw>
-<status status="PASS" starttime="20230415 16:54:01.351" endtime="20230415 16:55:10.607"/>
-</kw>
-<status status="PASS" starttime="20230415 16:54:01.350" endtime="20230415 16:55:10.608"/>
+<status status="PASS" starttime="20230415 17:58:10.667" endtime="20230415 18:37:30.526"/>
 </test>
-<status status="PASS" starttime="20230415 16:54:01.335" endtime="20230415 16:55:10.609"/>
+<status status="PASS" starttime="20230415 17:58:10.650" endtime="20230415 18:37:30.528"/>
 </suite>
 <statistics>
 <total>
