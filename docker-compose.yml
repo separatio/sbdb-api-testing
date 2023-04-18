@@ -5,7 +5,6 @@ services:
     build: .
     depends_on: []
     image: sbdb-api-testing
-    user: "1000:1000"
     volumes:
       - ./:/sbdb-api-testing
       - ./results:/sbdb-api-testing/results
