@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  grafana:
+    image: grafana/grafana-oss
+    ports:
+      - 3000:3000
+    volumes:
+      - ./test_archive.db:/app/data/test_archive.db
